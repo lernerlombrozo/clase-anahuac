@@ -1,0 +1,34 @@
+<!--
+  Generated template for the CalculadoraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>factorial</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-item>
+    <ion-label fixed>Input: </ion-label>
+    <ion-input type="number" [(ngModel)]="n"></ion-input>
+</ion-item>
+
+<ion-card>
+    <ion-card-header>
+        Resultado: 
+    </ion-card-header>
+    <ion-card-content>
+        {{resultado}}
+    </ion-card-content>
+</ion-card>
+
+<button ion-button full (click)="cuadrado()">Cuadrado</button>
+<button ion-button full round (click)="factorial()">Factorial</button>
+<button ion-button block (click)="consecutivos()">Suma # consecutivos</button>
+</ion-content>

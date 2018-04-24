@@ -1,14 +1,24 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Menu
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-list>
+        <button ion-item color="primary" (click)="goTo(factorialPage)">
+            <ion-icon name="alert" item-start></ion-icon>
+            Factorial
+        </button>
+        <button ion-item (click)="goTo(funcionPage)">
+            <ion-icon name="calculator" item-end color="primary"></ion-icon>
+            Función de mi carrera
+        </button >
+        <button ion-item color="primary" (click)="goTo(cameraPage)">
+            <ion-icon name="camera" item-start></ion-icon>
+            Cámara
+        </button >
+    </ion-list>
 </ion-content>
